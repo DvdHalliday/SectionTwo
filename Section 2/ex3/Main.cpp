@@ -4,6 +4,8 @@ int main() {
 	int number;
 	std::cout << "Please enter a number: ";
 	std::cin >> number;
-	std::string response = (number > 0) ? "Your number is positive!" : (number == 0) ? "Your number is zero!" : "Your number is negative!"; //Trying a nested ternary expression
-	std::cout << response << "\n";
+	if (number > 0) std::cout << "Your number is positive!";
+	else if (number == 0) std::cout << "Your number is zero!";
+	else std::cout << "Your number is negative!";
+	std::cout<< std::endl;
 }
