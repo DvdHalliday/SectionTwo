@@ -7,5 +7,5 @@ int main() {
 	std::string response = (input != 97 && input != 101 && input != 105 && input != 111 && input != 117)
 		? "Your character is indeed NOT a lowercase vowel!!"
 		: "Your character IS a lowercase vowel ;c";
-	std::cout << response << "\n";
+	std::cout << response << std::endl;
 }
