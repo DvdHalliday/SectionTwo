@@ -11,12 +11,12 @@ int main() {
 	std::cout << "Welcome to your quiz!\n0 - False\n1 - True\n\nQuestion 1: Are avocados fruits ? ";
 	bool firstAnswer, secondAnswer, thirdAnswer;
 	std::cin >> firstAnswer;
-	grade += getAwardedPointsFromAnswer(firstAnswer, 1);
+	grade += getAwardedPointsFromAnswer(firstAnswer, true);
 	std::cout << "Question 2: Is the sky blue? ";
 	std::cin >> secondAnswer;
-	grade += getAwardedPointsFromAnswer(secondAnswer, 1);
+	grade += getAwardedPointsFromAnswer(secondAnswer, true);
 	std::cout << "Question 3: Is Teravision the Best.Team.Ever? ";
 	std::cin >> thirdAnswer;
-	grade += getAwardedPointsFromAnswer(thirdAnswer, 1);
+	grade += getAwardedPointsFromAnswer(thirdAnswer, true);
 	std::cout << "You got " << grade << "/3 correct answers! Your final grade is: " << grade*5 / 3.0f << "\n";
 }
